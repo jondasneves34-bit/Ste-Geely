@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stefany Pitta Rodes · Consultora Geely em Maringá</title>
+<meta name="description" content="Stefany Pitta Rodes, consultora Geely na Av. Colombo em Maringá/PR. Especialista em carros elétricos. Conheça o EX2, EX5 e EX5 EM-i e fale comigo no WhatsApp.">
+<meta property="og:title" content="Stefany Pitta Rodes · Consultora Geely em Maringá">
+<meta property="og:description" content="Especialista em carros elétricos na Geely Av. Colombo. Test drive, avaliação do usado e ajuda no financiamento.">
+<meta property="og:image" content="stefany.png">
+<meta name="theme-color" content="#0a0a0b">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0a0b; --bg-2:#121215; --bg-3:#1a1a1f;
+  --line:#26262d; --line-2:#33333d;
+  --txt:#f4f4f5; --txt-2:#a1a1aa; --txt-3:#71717a;
+  --accent:#3a7ff8; --wa:#25D366;
+  --r:14px; --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg); color:var(--txt);
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:80px 0}
+h1,h2,h3{font-weight:800;line-height:1.12;letter-spacing:-.025em}
+h1{font-size:clamp(2rem,5.5vw,3.4rem)}
+h2{font-size:clamp(1.6rem,3.6vw,2.4rem)}
+h3{font-size:1.15rem;font-weight:700;letter-spacing:-.01em}
+.eyebrow{
+  font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:14px;
+}
+.lead{color:var(--txt-2);font-size:1.05rem;max-width:60ch}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:15px 26px;border-radius:10px;font-weight:600;font-size:.95rem;
+  border:1px solid transparent;cursor:pointer;
+  transition:transform .15s ease,background-color .2s ease,border-color .2s ease,color .2s ease;
+  text-align:center;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.btn-wa{background:var(--wa);color:#05230f}
+.btn-wa:hover{background:#20c25c}
+.btn-ghost{border-color:var(--line-2);color:var(--txt)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn svg{width:19px;height:19px;flex:none}
+
+.hero{
+  padding:56px 0 72px;
+  background:
+    radial-gradient(900px 480px at 78% 8%, rgba(58,127,248,.20), transparent 62%),
+    radial-gradient(700px 400px at 5% 95%, rgba(58,127,248,.07), transparent 60%),
+    var(--bg);
+  border-bottom:1px solid var(--line);
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.brandline{
+  display:inline-flex;align-items:center;gap:10px;
+  border:1px solid var(--line-2);border-radius:999px;padding:7px 16px;
+  font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--txt-2);margin-bottom:26px;
+}
+.brandline .dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.hero h1 span{color:var(--accent)}
+.hero .lead{margin-top:20px;font-size:1.1rem}
+.hero-cta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+.hero-photo{position:relative}
+.hero-photo img{
+  width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:20px;
+  border:1px solid var(--line-2);background:linear-gradient(150deg,#1a1a1f,#26262d);
+}
+.photo-tag{
+  position:absolute;left:16px;bottom:16px;right:16px;
+  background:rgba(10,10,11,.82);backdrop-filter:blur(10px);
+  border:1px solid var(--line-2);border-radius:12px;padding:14px 16px;
+}
+.photo-tag strong{display:block;font-size:1rem;font-weight:700}
+.photo-tag span{font-size:.82rem;color:var(--txt-2)}
+
+.stats{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+  background:var(--line);border:1px solid var(--line);border-radius:var(--r);
+  overflow:hidden;margin-top:44px;
+}
+.stat{background:var(--bg-2);padding:24px 22px}
+.stat b{display:block;font-size:1.85rem;font-weight:800;letter-spacing:-.03em;line-height:1.1}
+.stat span{font-size:.82rem;color:var(--txt-2)}
+
+.about{background:var(--bg-2);border-block:1px solid var(--line)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.checks{list-style:none;display:grid;gap:14px;margin-top:8px}
+.checks li{display:flex;gap:13px;align-items:flex-start;color:var(--txt-2);font-size:.96rem}
+.checks svg{width:20px;height:20px;flex:none;color:var(--accent);margin-top:2px}
+
+.proofs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.proof{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--r);padding:24px 20px}
+.proof b{display:block;font-size:1.5rem;font-weight:800;letter-spacing:-.02em;color:var(--accent)}
+.proof span{font-size:.86rem;color:var(--txt-2);display:block;margin-top:6px}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+.card{
+  background:var(--bg-2);border:1px solid var(--line);border-radius:var(--r);
+  padding:28px 24px;display:flex;flex-direction:column;
+  transition:border-color .2s ease,transform .2s ease;
+}
+.card:hover{border-color:var(--line-2);transform:translateY(-3px)}
+.card-img{
+  margin:-28px -24px 20px;padding:14px 10px 0;border-radius:var(--r) var(--r) 0 0;
+  background:radial-gradient(120% 90% at 50% 105%, rgba(58,127,248,.16), transparent 70%);
+}
+.card-img img{width:100%;aspect-ratio:16/9;object-fit:contain;border-radius:8px}
+.card .tipo{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.card h3{margin:10px 0 8px;font-size:1.45rem;font-weight:800}
+.card > p{color:var(--txt-2);font-size:.92rem;min-height:60px}
+.specs{
+  list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:1px;
+  background:var(--line);border:1px solid var(--line);border-radius:10px;
+  overflow:hidden;margin:22px 0 24px;
+}
+.specs li{background:var(--bg-3);padding:14px 15px}
+.specs b{display:block;font-size:1.12rem;font-weight:700;letter-spacing:-.02em}
+.specs span{font-size:.72rem;color:var(--txt-3);text-transform:uppercase;letter-spacing:.06em}
+.card .btn{margin-top:auto;width:100%}
+
+/* ---- visualizador 360 ---- */
+.spin-tabs{display:flex;gap:10px;margin-top:32px;flex-wrap:wrap}
+.spin-tab{
+  background:transparent;color:var(--txt-2);border:1px solid var(--line-2);
+  border-radius:999px;padding:10px 20px;font:inherit;font-size:.88rem;font-weight:600;
+  cursor:pointer;transition:border-color .2s ease,color .2s ease,background-color .2s ease;
+}
+.spin-tab:hover{color:var(--txt);border-color:var(--txt-3)}
+.spin-tab:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.spin-tab[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.spin{
+  position:relative;margin-top:20px;border:1px solid var(--line);border-radius:var(--r);
+  background:
+    radial-gradient(70% 85% at 50% 100%, rgba(58,127,248,.15), transparent 70%),
+    var(--bg-3);
+  overflow:hidden;touch-action:pan-y;cursor:grab;user-select:none;
+}
+.spin.is-dragging{cursor:grabbing}
+.spin img{width:100%;aspect-ratio:2/1;object-fit:contain;pointer-events:none}
+.spin-hint{
+  position:absolute;left:50%;bottom:18px;transform:translateX(-50%);
+  display:flex;align-items:center;gap:8px;white-space:nowrap;
+  background:rgba(10,10,11,.78);backdrop-filter:blur(8px);
+  border:1px solid var(--line-2);border-radius:999px;padding:9px 18px;
+  font-size:.83rem;font-weight:600;color:var(--txt-2);
+  transition:opacity .3s ease;
+}
+.spin-hint svg{width:16px;height:16px;color:var(--accent)}
+.spin.is-used .spin-hint{opacity:0}
+.spin-load{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  background:var(--bg-3);font-size:.85rem;color:var(--txt-3);
+}
+.spin-load[hidden]{display:none}
+.spin-note{margin-top:14px;font-size:.84rem;color:var(--txt-3)}
+
+.warranty{background:var(--bg-2);border-block:1px solid var(--line)}
+.wgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
+.witem{border-left:2px solid var(--accent);padding-left:18px}
+.witem b{display:block;font-size:1.22rem;font-weight:800;letter-spacing:-.02em}
+.witem span{font-size:.88rem;color:var(--txt-2);display:block;margin-top:6px}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+.step{border-top:1px solid var(--line-2);padding-top:22px}
+.step b{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;
+  font-size:.88rem;font-weight:700;margin-bottom:14px;
+}
+.step h3{margin-bottom:8px}
+.step p{color:var(--txt-2);font-size:.93rem}
+
+.final{
+  background:radial-gradient(700px 380px at 50% 0%, rgba(58,127,248,.20), transparent 65%),var(--bg-2);
+  border-top:1px solid var(--line);text-align:center;
+}
+.final .lead{margin:18px auto 0}
+.final .btn{margin-top:32px}
+
+footer{background:var(--bg);border-top:1px solid var(--line);padding:44px 0;font-size:.82rem;color:var(--txt-3)}
+footer p + p{margin-top:12px}
+footer a{color:var(--txt-2);text-decoration:underline;text-underline-offset:3px}
+
+.float{
+  position:fixed;right:22px;bottom:22px;z-index:99;
+  width:60px;height:60px;border-radius:50%;background:var(--wa);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 20px rgba(0,0,0,.4);transition:transform .2s ease;
+}
+.float:hover{transform:scale(1.08)}
+.float:focus-visible{outline:3px solid var(--wa);outline-offset:4px}
+.float svg{width:31px;height:31px;color:#05230f}
+
+@media (max-width:900px){
+  section{padding:60px 0}
+  .hero-grid,.about-grid{grid-template-columns:1fr;gap:36px}
+  .hero-photo{order:-1;max-width:340px}
+  .proofs,.wgrid{grid-template-columns:repeat(2,1fr)}
+  .cards,.steps{grid-template-columns:1fr}
+  .card > p{min-height:0}
+}
+@media (max-width:520px){
+  .wrap{padding:0 18px}
+  .stats,.proofs{grid-template-columns:1fr}
+  .hero-cta .btn{width:100%}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+
+<!-- =========================================================
+     TROQUE SOMENTE ESTE BLOCO.
+     O resto da pagina se preenche sozinho a partir daqui.
+     ========================================================= -->
+<script>
+const VENDEDOR = {
+  nome:        "Stefany Pitta Rodes",
+  cargo:       "Consultora Geely, especialista em elétricos",
+  concessaria: "Geely Av. Colombo",
+  cidade:      "Maringá / PR",
+  // 55 + DDD + numero, so digitos. CONFERIR: celular no Brasil tem 9 depois do DDD.
+  whatsapp:    "5544988122181",
+  foto:        "stefany.png",
+  instagram:   "https://www.instagram.com/stefany.geely/?hl=pt-br",
+  anos:        "1",
+  clientes:    "+30",
+  bio: [
+    "Oi, eu sou a Stefany. Trabalho com a Geely há 1 ano, aqui na Av. Colombo em Maringá, e sou especialista em carro elétrico. Ou seja: aquelas dúvidas que ninguém responde direito — quanto custa carregar em casa, quanto tempo demora, se dá pra viajar — eu respondo na hora, com número real.",
+    "Já entreguei mais de 30 carros e mantenho nota 10 no atendimento. Não é por acaso: eu explico tudo antes, te coloco pra dirigir antes de falar de preço, avalio seu usado e te ajudo no financiamento. E se não for a hora de comprar, eu falo isso também."
+  ],
+  diferenciais: [
+    "Test drive no horário que funciona pra você",
+    "Avaliação do seu usado na troca, sem compromisso",
+    "Ajuda no financiamento, do começo ao fim",
+    "Dúvida sobre elétrico? Pergunta à vontade, sem compromisso"
+  ]
+};
+</script>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="brandline"><span class="dot"></span><span data-v="brandline">Rede Oficial Geely</span></div>
+      <h1>Seu próximo carro é <span>elétrico</span>. E você não precisa entender de tudo pra escolher o seu.</h1>
+      <p class="lead">
+        Oi! Eu sou a <b data-v="nome">—</b>, <span data-v="cargo">—</span> aqui em <span data-v="cidade">—</span>.
+        Te explico a diferença entre os modelos, faço a simulação e te acompanho até a entrega.
+        Sem pressão e sem enrolação.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-wa" data-wa="Oi {nome}! Vi sua página e queria saber mais sobre os carros da Geely." href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.8 9.8 0 0 1-1.5-5.23c0-5.41 4.4-9.81 9.82-9.81 2.62 0 5.08 1.02 6.93 2.88a9.74 9.74 0 0 1 2.87 6.94c0 5.41-4.4 9.82-9.8 9.82m8.35-18.17A11.68 11.68 0 0 0 12.05 0C5.6 0 .36 5.24.36 11.68c0 2.06.54 4.07 1.56 5.85L.26 24l6.62-1.74a11.66 11.66 0 0 0 5.17 1.24h.01c6.44 0 11.68-5.24 11.68-11.68 0-3.12-1.21-6.05-3.42-8.26"/></svg>
+          Falar no WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="#modelos">Ver os modelos</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img data-v-src="foto" src="" alt="Foto do consultor Geely">
+      <div class="photo-tag">
+        <strong data-v="nome">—</strong>
+        <span><span data-v="concessaria">—</span> · <span data-v="cidade">—</span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="about" id="sobre">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <p class="eyebrow">Quem vai te atender</p>
+        <h2>Uma consultora de verdade, não um atendente de plantão.</h2>
+        <div data-v="bio" style="margin-top:22px;color:var(--txt-2)"></div>
+        <div class="stats">
+          <div class="stat"><b data-v="anos">—</b><span>ano com a Geely</span></div>
+          <div class="stat"><b data-v="clientes">—</b><span>carros entregues</span></div>
+          <div class="stat"><b>Nota 10</b><span>na avaliação dos clientes</span></div>
+        </div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:22px">O que está incluído no meu atendimento</h3>
+        <ul class="checks" data-v="diferenciais"></ul>
+        <a class="btn btn-wa" style="margin-top:30px" data-wa="Oi {nome}! Queria agendar um test drive." href="#">Agendar test drive</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="marca">
+  <div class="wrap">
+    <p class="eyebrow">Por que Geely</p>
+    <h2>Uma marca que chegou e virou referência.</h2>
+    <p class="lead" style="margin-top:16px">Números que não são promessa de vendedor — são registro público de mercado.</p>
+    <div class="proofs">
+      <div class="proof"><b>+20 mil</b><span>unidades vendidas no Brasil</span></div>
+      <div class="proof"><b>40+</b><span>concessionárias no país</span></div>
+      <div class="proof"><b>R$ 3,8 bi</b><span>investidos pela Renault Geely do Brasil</span></div>
+      <div class="proof"><b>#1</b><span>EX2, elétrico compacto mais vendido do mundo</span></div>
+    </div>
+    <p style="margin-top:28px;color:var(--txt-3);font-size:.88rem">
+      Prêmios recentes: Melhor Compra 2026 (Quatro Rodas) e Melhor Elétrico no Qual Comprar (Autoesporte) para o EX2;
+      Melhor Elétrico (UOL Carros) para o EX5; 1º lugar em eficiência energética no Prêmio Mobilidade Limpa 2026.
+    </p>
+  </div>
+</section>
+
+<section id="modelos" style="background:var(--bg-2);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <p class="eyebrow">A linha completa</p>
+    <h2>Três carros, três perfis diferentes.</h2>
+    <p class="lead" style="margin-top:16px">
+      Não existe "o melhor". Existe o que combina com a sua rotina, sua garagem e sua estrada.
+      Me conta como você usa o carro no dia a dia que eu te digo qual dos três faz sentido pra você.
+    </p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card-img"><img src="assets/ex2-03.webp" alt="Geely EX2 visto de três quartos" loading="lazy"></div>
+        <span class="tipo">100% elétrico · compacto</span>
+        <h3>Geely EX2</h3>
+        <p>Para cidade e trajeto diário. Custo por quilômetro baixo, porta-malas grande pro tamanho e tração traseira — raro no segmento.</p>
+        <ul class="specs">
+          <li><b>289 km</b><span>autonomia INMETRO</span></li>
+          <li><b>116 cv</b><span>potência</span></li>
+          <li><b>375 L</b><span>porta-malas</span></li>
+          <li><b>21 min</b><span>recarga 30-80%</span></li>
+        </ul>
+        <a class="btn btn-wa" data-wa="Oi {nome}! Me conta mais sobre o Geely EX2?" href="#">Falar sobre o EX2</a>
+      </article>
+
+      <article class="card">
+        <div class="card-img"><img src="assets/ex5.webp" alt="Geely EX5 em movimento" loading="lazy"></div>
+        <span class="tipo">SUV · 100% elétrico</span>
+        <h3>Geely EX5</h3>
+        <p>SUV elétrico completo. Espaço de família, 0-100 em 6,9 s, teto solar panorâmico e banco com massagem na versão MAX.</p>
+        <ul class="specs">
+          <li><b>413 km</b><span>autonomia INMETRO</span></li>
+          <li><b>218 cv</b><span>potência</span></li>
+          <li><b>6,9 s</b><span>0 a 100 km/h</span></li>
+          <li><b>20 min</b><span>recarga 30-80%</span></li>
+        </ul>
+        <a class="btn btn-wa" data-wa="Oi {nome}! Me conta mais sobre o Geely EX5?" href="#">Falar sobre o EX5</a>
+      </article>
+
+      <article class="card">
+        <div class="card-img"><img src="assets/emi-03.webp" alt="Geely EX5 EM-i visto de três quartos" loading="lazy"></div>
+        <span class="tipo">SUV · híbrido plug-in</span>
+        <h3>Geely EX5 EM-i</h3>
+        <p>Elétrico na cidade, híbrido na estrada. Roda até 112 km sem gastar gasolina e faz até 1.300 km de autonomia total.</p>
+        <ul class="specs">
+          <li><b>1.300 km</b><span>autonomia total</span></li>
+          <li><b>112 km</b><span>só no elétrico</span></li>
+          <li><b>262 cv</b><span>potência combinada</span></li>
+          <li><b>16 min</b><span>recarga 30-80%</span></li>
+        </ul>
+        <a class="btn btn-wa" data-wa="Oi {nome}! Me conta mais sobre o Geely EX5 EM-i?" href="#">Falar sobre o EX5 EM-i</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="girar">
+  <div class="wrap">
+    <p class="eyebrow">Explore</p>
+    <h2>Gire o carro e veja de todos os ângulos.</h2>
+    <p class="lead" style="margin-top:16px">
+      Arraste com o mouse ou com o dedo pra rodar o carro 360°. É o mesmo material oficial da Geely —
+      e se quiser ver de perto, é só me chamar que a gente marca.
+    </p>
+
+    <div class="spin-tabs" role="tablist" aria-label="Escolha o modelo">
+      <button class="spin-tab" role="tab" aria-selected="true"  data-model="ex2">Geely EX2</button>
+      <button class="spin-tab" role="tab" aria-selected="false" data-model="emi">Geely EX5 EM-i</button>
+    </div>
+
+    <div class="spin" id="spin">
+      <img id="spinImg" draggable="false" alt="Geely EX2 em visualização 360 graus">
+      <div class="spin-load" id="spinLoad">carregando as fotos…</div>
+      <div class="spin-hint">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5 4 9l4 4"/><path d="M16 19l4-4-4-4"/><path d="M4 9h11a5 5 0 0 1 5 5v1"/></svg>
+        Arraste para girar
+      </div>
+    </div>
+    <p class="spin-note">
+      Imagens oficiais Geely. O EX5 tem 360° só na concessionária — me chama que eu mostro ao vivo.
+    </p>
+
+    <a class="btn btn-wa" style="margin-top:26px" data-wa="Oi {nome}! Vi o carro girando na sua página e queria ver de perto." href="#">
+      Quero ver pessoalmente
+    </a>
+  </div>
+</section>
+
+<section class="warranty">
+  <div class="wrap">
+    <p class="eyebrow">Tranquilidade de fábrica</p>
+    <h2>A garantia responde antes de você perguntar.</h2>
+    <div class="wgrid">
+      <div class="witem"><b>8 anos ou 150.000 km</b><span>Bateria de tração: motor elétrico, inversor e componentes de alta voltagem</span></div>
+      <div class="witem"><b>6 anos ou 150.000 km</b><span>Veículo completo, garantia ampla de fábrica</span></div>
+      <div class="witem"><b>2 anos de assistência 24h</b><span>Cobertura nacional, conforme plano vigente</span></div>
+      <div class="witem"><b>2 anos de conexão</b><span>Controle do veículo pelo aplicativo My Geely</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="como">
+  <div class="wrap">
+    <p class="eyebrow">Como funciona</p>
+    <h2>Três passos, sem burocracia até você querer.</h2>
+    <div class="steps">
+      <div class="step">
+        <b>1</b>
+        <h3>Você me chama no WhatsApp</h3>
+        <p>Me conta como usa o carro: quilometragem por dia, se tem tomada em casa, se pega estrada. Em minutos eu digo qual modelo encaixa.</p>
+      </div>
+      <div class="step">
+        <b>2</b>
+        <h3>Agendamos o test drive</h3>
+        <p>Você dirige o carro antes de qualquer conversa de preço. E se você tem um usado, já faço a avaliação no mesmo dia.</p>
+      </div>
+      <div class="step">
+        <b>3</b>
+        <h3>Fechamos e eu acompanho</h3>
+        <p>Simulação, documentação e entrega. Depois disso eu não sumo: revisão, dúvida no app, ponto de recarga, é só chamar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Manda uma mensagem. Respondo pessoalmente.</h2>
+    <p class="lead">
+      Sem formulário, sem robô, sem central de atendimento. A mensagem cai direto no meu celular
+      e quem responde sou eu, a <span data-v="primeiro">—</span>.
+    </p>
+    <a class="btn btn-wa" data-wa="Oi {nome}! Vi sua página e queria conversar sobre um Geely." href="#">
+      Chamar no WhatsApp agora
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>
+      <b data-v="nome">—</b> · <span data-v="cargo">—</span> · <span data-v="concessaria">—</span> — <span data-v="cidade">—</span><span data-v="instagram-link"></span>
+    </p>
+    <p>
+      Página pessoal de consultora de vendas da rede autorizada Geely. Não é o site oficial da marca.
+      Site oficial: <a href="https://www.geelybrasil.com.br/" target="_blank" rel="noopener">geelybrasil.com.br</a>.
+    </p>
+    <p>
+      Imagens meramente ilustrativas. Especificações, versões, cores e condições comerciais podem mudar sem aviso —
+      confirme comigo antes de decidir. Autonomia declarada conforme INMETRO; o consumo real varia com uso, carga,
+      clima e estilo de condução. Recarga de 30% a 80% em carregador rápido DC, conforme versão e potência do ponto de recarga.
+      Garantias conforme manual do proprietário e política vigente da Geely no Brasil.
+    </p>
+  </div>
+</footer>
+
+<a class="float" data-wa="Oi {nome}! Vi sua página e queria saber mais sobre os carros da Geely." href="#" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.8 9.8 0 0 1-1.5-5.23c0-5.41 4.4-9.81 9.82-9.81 2.62 0 5.08 1.02 6.93 2.88a9.74 9.74 0 0 1 2.87 6.94c0 5.41-4.4 9.82-9.8 9.82m8.35-18.17A11.68 11.68 0 0 0 12.05 0C5.6 0 .36 5.24.36 11.68c0 2.06.54 4.07 1.56 5.85L.26 24l6.62-1.74a11.66 11.66 0 0 0 5.17 1.24h.01c6.44 0 11.68-5.24 11.68-11.68 0-3.12-1.21-6.05-3.42-8.26"/></svg>
+</a>
+
+<script>
+(function(){
+  var v = VENDEDOR;
+  var primeiroNome = String(v.nome || "").trim().split(/\s+/)[0] || "";
+
+  document.querySelectorAll("[data-v]").forEach(function(el){
+    var k = el.getAttribute("data-v");
+    if (k === "bio" || k === "diferenciais" || k === "instagram-link" || k === "brandline") return;
+    if (k === "primeiro") { el.textContent = primeiroNome; return; }
+    if (v[k]) el.textContent = v[k];
+  });
+
+  var bl = document.querySelector('[data-v="brandline"]');
+  if (bl && v.concessaria) bl.textContent = v.concessaria + " · Rede Oficial Geely";
+
+  var foto = document.querySelector("[data-v-src]");
+  if (foto) {
+    foto.alt = "Foto de " + (v.nome || "consultor Geely");
+    // sem foto (ou caminho errado): fica so o bloco em gradiente, sem icone quebrado
+    var VAZIO = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+    foto.onerror = function(){ this.src = VAZIO; this.alt = ""; };
+    foto.src = v.foto || VAZIO;
+  }
+
+  var bio = document.querySelector('[data-v="bio"]');
+  if (bio) {
+    bio.innerHTML = "";
+    (v.bio || []).forEach(function(txt){
+      var p = document.createElement("p");
+      p.style.marginBottom = "16px";
+      p.textContent = txt;
+      bio.appendChild(p);
+    });
+  }
+
+  var CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
+  var dif = document.querySelector('[data-v="diferenciais"]');
+  if (dif) {
+    dif.innerHTML = "";
+    (v.diferenciais || []).forEach(function(txt){
+      var li = document.createElement("li");
+      li.innerHTML = CHECK;
+      var s = document.createElement("span");
+      s.textContent = txt;
+      li.appendChild(s);
+      dif.appendChild(li);
+    });
+  }
+
+  var ig = document.querySelector('[data-v="instagram-link"]');
+  if (ig && v.instagram) {
+    ig.appendChild(document.createTextNode(" · "));
+    var a = document.createElement("a");
+    a.href = v.instagram; a.target = "_blank"; a.rel = "noopener";
+    a.textContent = "Instagram";
+    ig.appendChild(a);
+  }
+
+  // ---- visualizador 360: arraste pra girar ----
+  var SPIN = {
+    ex2: { label: "Geely EX2",      frames: [] },
+    emi: { label: "Geely EX5 EM-i", frames: [] }
+  };
+  for (var i = 1; i <= 24; i++) {
+    var nn = i < 10 ? "0" + i : "" + i;
+    SPIN.ex2.frames.push("assets/ex2-" + nn + ".webp");
+    SPIN.emi.frames.push("assets/emi-" + nn + ".webp");
+  }
+
+  var spin = document.getElementById("spin");
+  if (spin) {
+    var spinImg  = document.getElementById("spinImg");
+    var spinLoad = document.getElementById("spinLoad");
+    var tabs     = [].slice.call(document.querySelectorAll(".spin-tab"));
+    var cache    = {};
+    var atual    = "ex2";
+    var frame    = 0;
+
+    function preload(key, done){
+      if (cache[key]) { done(); return; }
+      var list = SPIN[key].frames, imgs = [], faltam = list.length;
+      spinLoad.hidden = false;
+      list.forEach(function(src, idx){
+        var im = new Image();
+        im.onload = im.onerror = function(){
+          if (--faltam === 0) { cache[key] = imgs; spinLoad.hidden = true; done(); }
+        };
+        im.src = src;
+        imgs[idx] = im;
+      });
+    }
+
+    function desenha(){
+      var list = cache[atual];
+      if (list) spinImg.src = list[frame].src;
+    }
+
+    function troca(key){
+      atual = key; frame = 0;
+      spinImg.alt = SPIN[key].label + " em visualização 360 graus";
+      tabs.forEach(function(t){ t.setAttribute("aria-selected", String(t.dataset.model === key)); });
+      preload(key, desenha);
+    }
+
+    // arraste: ~14px de movimento = 1 quadro
+    var arrastando = false, ultimoX = 0, acumulado = 0;
+    var PASSO = 14;
+
+    function inicia(x){ arrastando = true; ultimoX = x; acumulado = 0; spin.classList.add("is-dragging", "is-used"); }
+    function move(x){
+      if (!arrastando) return;
+      acumulado += x - ultimoX;
+      ultimoX = x;
+      var passos = Math.trunc(acumulado / PASSO);
+      if (!passos) return;
+      acumulado -= passos * PASSO;
+      var n = SPIN[atual].frames.length;
+      frame = ((frame - passos) % n + n) % n;
+      desenha();
+    }
+    function solta(){ arrastando = false; spin.classList.remove("is-dragging"); }
+
+    spin.addEventListener("pointerdown", function(e){ inicia(e.clientX); spin.setPointerCapture(e.pointerId); });
+    spin.addEventListener("pointermove", function(e){ move(e.clientX); });
+    spin.addEventListener("pointerup", solta);
+    spin.addEventListener("pointercancel", solta);
+    spin.addEventListener("dragstart", function(e){ e.preventDefault(); });
+
+    // teclado: setas giram o carro
+    spin.tabIndex = 0;
+    spin.setAttribute("role", "img");
+    spin.addEventListener("keydown", function(e){
+      var d = e.key === "ArrowRight" ? -1 : e.key === "ArrowLeft" ? 1 : 0;
+      if (!d) return;
+      e.preventDefault();
+      spin.classList.add("is-used");
+      var n = SPIN[atual].frames.length;
+      frame = ((frame - d) % n + n) % n;
+      desenha();
+    });
+
+    tabs.forEach(function(t){
+      t.addEventListener("click", function(){ troca(t.dataset.model); });
+    });
+
+    // so baixa os quadros quando a secao chega perto da tela
+    var obs = new IntersectionObserver(function(entradas, o){
+      if (entradas[0].isIntersecting) { o.disconnect(); troca("ex2"); }
+    }, { rootMargin: "300px" });
+    obs.observe(spin);
+  }
+
+  var tel = String(v.whatsapp || "").replace(/\D/g, "");
+  document.querySelectorAll("[data-wa]").forEach(function(a){
+    var msg = a.getAttribute("data-wa").replace("{nome}", primeiroNome);
+    a.href = "https://wa.me/" + tel + "?text=" + encodeURIComponent(msg);
+    a.target = "_blank";
+    a.rel = "noopener";
+  });
+
+  // titulo da aba vem do <title> no topo do arquivo
+})();
+</script>
+</body>
+</html>
