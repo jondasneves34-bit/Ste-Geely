@@ -7,8 +7,8 @@
 <meta name="description" content="Stefany Pitta Rodes, consultora Geely na Av. Colombo em Maringá/PR. Especialista em carros elétricos. Conheça o EX2, EX5 e EX5 EM-i e fale comigo no WhatsApp.">
 <meta property="og:title" content="Stefany Pitta Rodes · Consultora Geely em Maringá">
 <meta property="og:description" content="Especialista em carros elétricos na Geely Av. Colombo. Test drive, avaliação do usado e ajuda no financiamento.">
-<meta property="og:image" content="stefany.png">
-<meta name="theme-color" content="#0a0a0b">
+<meta property="og:image" content="stefany.jpg">
+<meta name="theme-color" content="#1d40c4">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,12 +59,15 @@ h3{font-size:1.15rem;font-weight:700;letter-spacing:-.01em}
 .btn svg{width:19px;height:19px;flex:none}
 
 .hero{
-  padding:56px 0 72px;
+  padding:24px 0 78px;
   background:
-    radial-gradient(900px 480px at 78% 8%, rgba(58,127,248,.20), transparent 62%),
-    radial-gradient(700px 400px at 5% 95%, rgba(58,127,248,.07), transparent 60%),
-    var(--bg);
-  border-bottom:1px solid var(--line);
+    radial-gradient(60% 55% at 12% 104%, #e2653b 0%, rgba(226,101,59,0) 55%),
+    radial-gradient(55% 55% at 90% 96%, #35b6a4 0%, rgba(53,182,164,0) 55%),
+    radial-gradient(48% 42% at 84% 6%, #5a86ff 0%, rgba(90,134,255,0) 60%),
+    radial-gradient(75% 75% at 38% 32%, #2b54e6 0%, rgba(43,84,230,0) 72%),
+    linear-gradient(135deg,#1e39ba 0%,#1d40c4 45%,#243a97 100%);
+  color:#fff;
+  border-bottom:1px solid rgba(255,255,255,.12);
 }
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
 .brandline{
@@ -89,6 +92,31 @@ h3{font-size:1.15rem;font-weight:700;letter-spacing:-.01em}
 }
 .photo-tag strong{display:block;font-size:1rem;font-weight:700}
 .photo-tag span{font-size:.82rem;color:var(--txt-2)}
+
+/* topbar + logo Geely */
+.hero-top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:30px;flex-wrap:wrap}
+.brand-logo{display:inline-flex;align-items:center;gap:12px;color:#fff}
+.brand-mark{height:26px;width:auto;flex:none;filter:drop-shadow(0 1px 6px rgba(0,0,0,.22))}
+.brand-word{font-weight:800;font-size:1.3rem;letter-spacing:.08em}
+.hero-top .btn-mini{
+  display:inline-flex;align-items:center;gap:8px;padding:9px 18px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.4);color:#fff;font-weight:600;font-size:.85rem;
+  transition:background-color .2s ease;
+}
+.hero-top .btn-mini:hover{background:rgba(255,255,255,.14)}
+.hero-top .btn-mini svg{width:16px;height:16px;flex:none}
+.hero h1{color:#fff}
+.hero h1 span{color:#dbe6ff}
+.hero .lead{color:rgba(255,255,255,.92)}
+.hero .brandline{border-color:rgba(255,255,255,.34);color:rgba(255,255,255,.9)}
+.hero .brandline .dot{background:#fff}
+.hero .btn-ghost{border-color:rgba(255,255,255,.45);color:#fff}
+.hero .btn-ghost:hover{border-color:#fff;color:#fff;background:rgba(255,255,255,.1)}
+.hero-photo img{border-color:rgba(255,255,255,.28)}
+/* logo no rodape */
+.foot-logo{display:inline-flex;align-items:center;gap:11px;color:var(--txt-2);margin-bottom:20px;text-decoration:none}
+.foot-logo .brand-mark{height:20px;filter:none}
+.foot-logo .brand-word{font-size:1.05rem;letter-spacing:.07em}
 
 .stats{
   display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
@@ -236,11 +264,11 @@ footer a{color:var(--txt-2);text-decoration:underline;text-underline-offset:3px}
 const VENDEDOR = {
   nome:        "Stefany Pitta Rodes",
   cargo:       "Consultora Geely, especialista em elétricos",
-  concessaria: "Geely Av. Colombo",
+  concessaria: "Geely Av. Colombo, 4063",
   cidade:      "Maringá / PR",
   // 55 + DDD + numero, so digitos. CONFERIR: celular no Brasil tem 9 depois do DDD.
   whatsapp:    "5544988122181",
-  foto:        "stefany.png",
+  foto:        "stefany.jpg",
   instagram:   "https://www.instagram.com/stefany.geely/?hl=pt-br",
   anos:        "1",
   clientes:    "+30",
@@ -258,6 +286,10 @@ const VENDEDOR = {
 </script>
 
 <header class="hero">
+  <div class="wrap hero-top">
+    <a class="brand-logo" href="#" aria-label="Geely"><svg class="brand-mark" viewBox="0 0 60 35" fill="currentColor" aria-hidden="true"><rect x="0" y="0" width="18" height="16" rx="4"/><rect x="21" y="0" width="18" height="16" rx="4"/><rect x="42" y="0" width="18" height="16" rx="4"/><rect x="0" y="19" width="18" height="16" rx="4"/><rect x="21" y="19" width="18" height="16" rx="4"/><rect x="42" y="19" width="18" height="16" rx="4"/></svg><span class="brand-word">GEELY</span></a>
+    <a class="btn-mini" data-wa="Oi {nome}! Vi sua página e queria saber mais sobre os carros da Geely." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.8 9.8 0 0 1-1.5-5.23c0-5.41 4.4-9.81 9.82-9.81 2.62 0 5.08 1.02 6.93 2.88a9.74 9.74 0 0 1 2.87 6.94c0 5.41-4.4 9.82-9.8 9.82m8.35-18.17A11.68 11.68 0 0 0 12.05 0C5.6 0 .36 5.24.36 11.68c0 2.06.54 4.07 1.56 5.85L.26 24l6.62-1.74a11.66 11.66 0 0 0 5.17 1.24h.01c6.44 0 11.68-5.24 11.68-11.680-3.12-1.21-6.05-3.42-8.26"/></svg>WhatsApp</a>
+  </div>
   <div class="wrap hero-grid">
     <div>
       <div class="brandline"><span class="dot"></span><span data-v="brandline">Rede Oficial Geely</span></div>
@@ -464,6 +496,7 @@ const VENDEDOR = {
 
 <footer>
   <div class="wrap">
+    <a class="foot-logo" href="#" aria-label="Geely"><svg class="brand-mark" viewBox="0 0 60 35" fill="currentColor" aria-hidden="true"><rect x="0" y="0" width="18" height="16" rx="4"/><rect x="21" y="0" width="18" height="16" rx="4"/><rect x="42" y="0" width="18" height="16" rx="4"/><rect x="0" y="19" width="18" height="16" rx="4"/><rect x="21" y="19" width="18" height="16" rx="4"/><rect x="42" y="19" width="18" height="16" rx="4"/></svg><span class="brand-word">GEELY</span></a>
     <p>
       <b data-v="nome">—</b> · <span data-v="cargo">—</span> · <span data-v="concessaria">—</span> — <span data-v="cidade">—</span><span data-v="instagram-link"></span>
     </p>
